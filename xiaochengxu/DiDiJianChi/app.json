@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/tm/tm",
+    "pages/bb/bb",
+    "pages/douban/douban",
+    "pages/detail/detail"
+  ],
+  "tabBar":{
+    "borderStyle": "white",
+    "list": [{
+        "text": "首页",
+        "pagePath": "pages/tm/tm",
+        "iconPath": "images/store.png",
+        "selectedIconPath": "images/store-selected.png"
+    },{
+        "text": "排行",
+        "pagePath": "pages/bb/bb",
+        "iconPath": "images/store.png",
+        "selectedIconPath": "images/store-selected.png"
+    },{
+        "text": "其他",
+        "pagePath": "pages/douban/douban",
+        "iconPath": "images/store.png",
+        "selectedIconPath": "images/store-selected.png"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "滴滴坚持",
+    "navigationBarTextStyle":"black"
+  }
+}
