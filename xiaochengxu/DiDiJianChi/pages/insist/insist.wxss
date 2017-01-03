@@ -1,45 +1,149 @@
-/**index.wxss**/
-.tm{
-    height: 600px;
-    padding: 5rpx;
+.menu{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: #fff;
+  border-bottom:#eee solid 1px;
+  z-index: 100000
 }
 
-.m{
+.top-nav{
+    white-space: nowrap;
     width: 95%;
-    border: 1px solid #242f34;
-    border-radius: 3px;
-    margin: 5rpx auto;
-    padding: 10rpx;
-    background-color: #242f34;
-    color: #fff;
+    margin: 0 auto;
 }
 
-.m-data{
-    margin-top: 20rpx;
+.top-btn{
+    display: inline-block;
+    padding: 22rpx;
+    font-size: 16px;
+}
+
+.top-hoverd-btn{
+    color: #42bd56;
+    border-bottom: #42bd56 solid 1px;
+}
+
+
+.line{
+    display: flex;
+    margin: 5rpx;
+    border: #ddd solid 1px;
+    padding: 50rpx;
+}
+
+.text-center{
+    margin: 0 auto;
+}
+
+.first{
+    text-align: center;
+    padding: 3rpx;
+}
+
+.toutiao{
+    padding: 1rpx;
+}
+
+.toutiao-img{
+    width: 80px;
+    height: 80px;
+}
+
+.two-line-text{
+    padding: 8px;
     display: flex;
     flex-direction: column;
 }
 
-.m-data-left{
+.txt{
+    margin: 8px 10px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.first-img{
+    width: 370px;
+    height: 180px;
+}
+
+.second{
+    padding: 5rpx;
+}
+
+.second-img{
+    height: 50px;
+    width: 95%;
+    margin-bottom: 5rpx;
+}
+
+.sl-col{
+    width: 84px;
+    margin: 0 2rpx;
+    border: #ddd solid 1px;
+    text-align: center;
+    padding: 3rpx;
+    font-size: 12px;
+}
+
+.forth{
     display: flex;
-    flex-direction: row;
-    margin-top: 10rpx;
+    text-align: center;
+    padding: 10px;
 }
 
-.m-data-right{
+.forth-img{
+    width: 150px;
+    height: 200px;
+}
+
+.forth .left{
+    border: #ddd dotted 1px;
+    padding: 1rpx;
+    margin-right: 5rpx;
+}
+
+.forth .right{
     display: flex;
-    flex-direction: row;
-    margin-top: 10rpx;
+    border: #ddd dotted 1px;
+    flex-direction: column;
+    font-size: 12px;
 }
 
-.m-data-top-left{
-    width: 60%;
+.forth .bottom,
+.forth .top{
+    display: flex;
+    margin: 1rpx;
+
 }
 
-.m-data-top-right{
-    width: 40%;
+.cl4-img{
+    width: 90px;
+    height: 90px;
 }
 
-.m-green{
-    color: #0feb00;
+.bottom .cl4,
+.top .cl4{
+    width: 50%;
+    margin: 1rpx;
+    border: #ddd dotted 1px;
+    flex: auto;
+    text-align: center;
+}
+
+.one-img{
+    flex-direction: column;
+    padding: 1rpx;
+}
+
+.alone-line-text{
+    width: 100%;
+    text-align: center;
+    padding: 30rpx;
+}
+
+.poster{
+    width: 370px;
+    height: 200px;
+    background: #0f0;
 }
