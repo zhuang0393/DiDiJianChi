@@ -12,41 +12,13 @@ Page({
         food: '',
         hidden: false
     },
-    toNew: function(){
-        console.log('new');
-         this.updateBtnStatus('new');
-    },
-    toGood: function(){
-        console.log('good');
-         this.updateBtnStatus('good');
-    },
-    toChild: function(){
-        console.log('child');
-         this.updateBtnStatus('child');
-    },
-    toMom: function(){
-        console.log('mom');
-         this.updateBtnStatus('mom');
-    },
-    toGirl: function(){
-        console.log('girl');
-         this.updateBtnStatus('girl');
-    },
-    toShoe: function(){
-        console.log('shoe');
-         this.updateBtnStatus('shoe');
-    },
-    toHome: function(){
-        console.log('home');
-         this.updateBtnStatus('home');
-    },
-    toBeauti: function(){
-        console.log('beauti');
-         this.updateBtnStatus('beauti');
-    },
-    toFood: function(){
-        console.log('food');
-         this.updateBtnStatus('food');
+
+    /**
+     * button点击事件监听
+     */
+    clickButton: function(e) {
+        //打印所有关于点击对象的信息
+        console.log(e);
     },
     onLaunch: function () {
         console.log('bb Launching ...');
