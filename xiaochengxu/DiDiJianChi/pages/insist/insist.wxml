@@ -1,7 +1,7 @@
-<scroll-view scroll-y="true" style="height: 600px;" class="container">
-    <loading hidden="{{hidden}}">
-        加载中...
-    </loading>
+<scroll-view scroll-y="true" class="container">
 
-<image style="width: 100%; height: 20%" mode="aspectFit" src="../../images/add.png"/>
+<view bindtap="toAddNewStickItem" class="first line" style="height: 60px;">
+<image style="width: 100%; height: 100%" mode="aspectFit" src="../../images/add.png"/>
+</view>
+
 </scroll-view>

@@ -1,50 +1,43 @@
-//获取应用实例
+var event = require('../../utils/event.js');
+var app = getApp()
 Page({
     data: {
-        new: 'top-hoverd-btn',
-        good: '',
-        child: '',
-        mom: '',
-        girl: '',
-        shoe: '',
-        home: '',
-        beauti: '',
-        food: '',
-        hidden: false
+        motto: 'Hello World',
+        userInfo: {}
     },
 
-    /**
-     * button点击事件监听
-     */
-    clickButton: function(e) {
-        //打印所有关于点击对象的信息
-        console.log(e);
-    },
     onLaunch: function () {
-        console.log('bb Launching ...');
+        console.log('onLaunch ...');
     },
+
     onShow: function(){
-         var that = this;
-         setTimeout(function(){
+        console.log('onShow ...');
+    },
+
+    onLoad: function() {
+        console.log('onLoad')
+        var that = this
+        //调用应用实例的方法获取全局数据
+        app.getUserInfo(function(userInfo){
+            //更新数据
             that.setData({
-                hidden: true
-            });
-         }, 1500);
+                userInfo:userInfo
+            })
+        })
+
+        event.on('DataChanged', this, function(data) {
+                console.log('select:' + data);
+        })
     },
-    updateBtnStatus: function(k){
-        this.setData({
-            new: this.getHoverd('new', k),
-            good: this.getHoverd('good', k),
-            child: this.getHoverd('child', k),
-            mom: this.getHoverd('mom', k),
-            girl: this.getHoverd('girl', k),
-            shoe: this.getHoverd('shoe', k),
-            home: this.getHoverd('home', k),
-            beauti: this.getHoverd('beauti', k),
-            food: this.getHoverd('food', k)
-        });
+
+    onUnload: function() {
+        event.remove('DataChanged', this);
     },
-    getHoverd: function(src, dest){
-        return (src === dest ?  'top-hoverd-btn' : '');
-    }
+
+    toAddNewStickItem: function(){
+        console.log('toAddNewStickItem');
+        wx.navigateTo({
+            url: '../sticklist/sticklist'
+        })
+    },
 });

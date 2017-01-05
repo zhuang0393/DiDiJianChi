@@ -3,7 +3,8 @@
     "pages/insist/insist",
     "pages/find/find",
     "pages/my/my",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/sticklist/sticklist"
   ],
   "tabBar":{
     "borderStyle": "white",
