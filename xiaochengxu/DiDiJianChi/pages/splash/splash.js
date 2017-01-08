@@ -18,6 +18,7 @@ Page({
         });
       }
     });
+
   },
   onReady:function(){
     // 页面渲染完成

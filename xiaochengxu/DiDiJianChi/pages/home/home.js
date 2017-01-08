@@ -33,8 +33,7 @@ Page({
     });
   },
   toGoalDetail:function(){
-    // add a goal
-    console.log('toAddGoal');
+    console.log('toGoalDetail');
     wx.navigateTo({
         url: '../goaldetail/goaldetail'
     });
