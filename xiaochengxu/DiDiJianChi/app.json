@@ -1,34 +1,15 @@
 {
   "pages":[
-    "pages/insist/insist",
-    "pages/find/find",
-    "pages/my/my",
-    "pages/detail/detail",
-    "pages/sticklist/sticklist"
+    "pages/splash/splash",
+    "pages/home/home",
+    "pages/setgoal/setgoal",
+    "pages/goaldetail/goaldetail"
   ],
-  "tabBar":{
-    "borderStyle": "white",
-    "list": [{
-        "text": "坚持",
-        "pagePath": "pages/insist/insist",
-        "iconPath": "images/insist.png",
-        "selectedIconPath": "images/insist-selected.png"
-    },{
-        "text": "发现",
-        "pagePath": "pages/find/find",
-        "iconPath": "images/find.png",
-        "selectedIconPath": "images/find-selected.png"
-    },{
-        "text": "我的",
-        "pagePath": "pages/my/my",
-        "iconPath": "images/my.png",
-        "selectedIconPath": "images/my-selected.png"
-    }]
-  },
+
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#FF4500",
     "navigationBarTitleText": "滴滴坚持",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   }
 }

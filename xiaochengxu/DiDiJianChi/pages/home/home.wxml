@@ -1,0 +1,9 @@
+<!--pages/home/home.wxml-->
+<scroll-view scroll-y="true" class="container" >
+<view wx:if="{{condition_showadd}}" bindtap="toAddGoal" class="first line" mode="scaleToFill" style="height: 480rpx;">
+<image style="width: 100%; height: 100%" mode="aspectFit" src="../../images/add.png"/>
+</view>
+<view wx:if="{{!condition_showadd}}" bindtap="toGoalDetail" class="first line" mode="scaleToFill" style="height: 480rpx;">
+<image style="width: 100%; height: 100%" mode="scaleToFill" src="../../images/run_icon.jpg"/>
+</view>
+</scroll-view>

@@ -1,0 +1,31 @@
+/* pages/splash/splash.wxss */
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+}
+.mask {
+    position: absolute;
+    bottom: 100rpx;
+    left: 0;
+    height: 150rpx;
+    width: 100%;
+    background: rgba(0, 0, 0, .3)
+}
+.logo {
+    margin-left: 100rpx;
+    width: 150rpx;
+    height: 150rpx;
+}
+.mask .cover-author {
+    position: absolute;
+    left: 300rpx;
+}
+.mask .cover-author {
+    top: 40rpx;
+    font-size: 50rpx;
+    color: #0F0;
+    font-weight: bold
+}

@@ -1,0 +1,12 @@
+/* pages/home/home.wxss */
+.line{
+    display: flex;
+    margin: 3rpx;
+    border: #ddd solid 1px;
+    padding: 5rpx;
+}
+
+.first{
+    text-align: center;
+    padding: 3rpx;
+}
