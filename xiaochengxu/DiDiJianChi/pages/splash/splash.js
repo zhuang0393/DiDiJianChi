@@ -54,5 +54,5 @@ function toHomePage() {
     wx.redirectTo( {
       url: '../home/home'
     });
-  }, 4000 );
+  }, 2000 );
 }

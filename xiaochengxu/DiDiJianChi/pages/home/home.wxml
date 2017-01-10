@@ -1,9 +1,12 @@
 <!--pages/home/home.wxml-->
-<scroll-view scroll-y="true" class="container" >
-<view wx:if="{{condition_showadd}}" bindtap="toAddGoal" class="first line" mode="scaleToFill" style="height: 480rpx;">
-<image style="width: 100%; height: 100%" mode="aspectFit" src="../../images/add.png"/>
-</view>
-<view wx:if="{{!condition_showadd}}" bindtap="toGoalDetail" class="first line" mode="scaleToFill" style="height: 480rpx;">
-<image style="width: 100%; height: 100%" mode="scaleToFill" src="../../images/run_icon.jpg"/>
-</view>
+<scroll-view scroll-y="true" style="height:100%;width:100%">
+    <view wx:if="{{condition_showadd}}" class="forselftext" >
+        <text >给自己：</text>
+    </view>
+    <view wx:if="{{condition_showadd}}" class="setgoaltext"  >
+        <text>定一个小目标</text>
+    </view>
+    <view wx:if="{{condition_showadd}}" class="addbutton" >
+        <button bindtap="toAddGoal" class="add" >设定</button>
+    </view>
 </scroll-view>

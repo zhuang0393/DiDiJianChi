@@ -1,12 +1,26 @@
 /* pages/home/home.wxss */
-.line{
-    display: flex;
-    margin: 3rpx;
-    border: #ddd solid 1px;
-    padding: 5rpx;
+.forselftext {
+  color: #AAA;
+  margin-left: 50rpx;
+  margin-top: 300rpx;
+  font-size: 60rpx;
 }
 
-.first{
-    text-align: center;
-    padding: 3rpx;
+.setgoaltext {
+  color: #FF4500;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  margin-top: 100rpx;
+  font-size: 110rpx;
+}
+
+.addbutton {
+  margin-top: 200rpx;
+  margin-bottom: 50rpx;
+}
+
+.add{
+  background: #FF4500;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
 }

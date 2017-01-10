@@ -1,1 +1,12 @@
 /* pages/setgoal/setgoal.wxss */
+.input{
+ padding-left: 10px;
+ height: 44px;
+}
+ 
+.inputView{
+ border: 1px solid goldenrod;
+ margin-left: 0px;
+ margin-right: 0px;
+ margin-top: 15px;
+}

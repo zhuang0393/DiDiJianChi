@@ -1,13 +1,18 @@
 <!--pages/setgoal/setgoal.wxml-->
 <scroll-view scroll-y="true" >
-  <text>坚持的目标</text>
-  <input bindinput="bindGoalInput" maxlength="50" placeholder="请输入目标，最大长度50" />
 
-  <text>坚持的时间</text>
-  <input bindinput="bindTimeInput" maxlength="10" placeholder="请输入天数" />
+<view class="inputView" style="margin-top: 40% ">
+<input class="input" placeholder="给目标起个名字吧" placeholder-style="color: red" maxlength="50" bindinput="bindGoalInput" />
+</view>
+ 
+<view class="inputView">
+<input class="input" type="number" placeholder="坚持多长时间" placeholder-style="color: red" maxlength="10" bindinput="bindTimeInput"/>
+</view>
+ 
+<view class="inputView">
+<input class="input" type="number" placeholder="为坚持下注" placeholder-style="color: red" maxlength="10" bindinput="bindBetInput"/>
+</view>
 
-  <text>目标的价值</text>
-  <input bindinput="bindBetInput" maxlength="50" placeholder="最大50元" />
+<button style="margin-left: 15rpx; margin-right: 15rpx; margin-top: 50rpx; border-radius: 40rpx" type="primary" bindtap="bindSubmitTap">确认设定</button>
 
-  <button bindtap="bindSubmitTap">确认</button>
 </scroll-view>
