@@ -1,6 +1,0 @@
-<!--pages/splash/splash.wxml-->
-<image src="../../images/pic1.jpg" class="cover" style="height:{{screenHeight}}px;width:{{screenWidth}}px"></image>
-<view class="mask">
-    <image class="logo" src="../../images/logo.png"></image>
-    <text class="cover-author">滴滴 坚持！</text>
-</view>

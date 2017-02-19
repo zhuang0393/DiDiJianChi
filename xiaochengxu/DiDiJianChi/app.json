@@ -1,15 +1,14 @@
 {
   "pages":[
-    "pages/splash/splash",
-    "pages/home/home",
-    "pages/setgoal/setgoal",
-    "pages/goaldetail/goaldetail"
+    "pages/goals/goals"
   ],
 
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#FF4500",
-    "navigationBarTitleText": "滴滴坚持",
-    "navigationBarTextStyle":"white"
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle":"dark",
+    "backgroundColor": "#f2f2f2",
+    "navigationBarBackgroundColor": "#fbfbfb",
+    "navigationBarTitleText": "滴水穿石",
+    "navigationBarTextStyle":"black"
   }
 }
